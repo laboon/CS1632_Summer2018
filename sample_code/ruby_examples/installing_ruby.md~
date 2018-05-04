@@ -1,0 +1,16 @@
+
+Ensure you are installing version 2.4 of
+
+You can check from the terminal by typing _ruby -v_.  It should
+
+_Note: The latest version of Ruby is 2.5.  PLEASE DO NOT USE IT!_
+
+
+## OS X
+
+## Linux (Ubuntu)
+
+## Windows
+
+1. Download Ruby **AND** the Ruby Development Kit from https://rubyinstaller.org/downloads/
+

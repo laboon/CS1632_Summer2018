@@ -1,0 +1,19 @@
+# craps.rb
+
+class Die
+  def roll
+    (1..6).sample
+  end
+end
+
+# EXECUTION STARTS HERE
+
+puts "What is your name?"
+name = gets.chomp
+
+d1 = Die::new
+d2 = Die::new
+
+d1_val = d1.roll
+d2_val = d2.roll
+

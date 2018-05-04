@@ -1,0 +1,10 @@
+# Note - generally, you will want to _raise_ and _rescue_ exceptions,
+# not _throw_ and _catch_ them.  Confusingly, Ruby also has _throw_ and
+# _catch_ keywords but they operate differently!  I will discuss below.
+
+def cause_exception
+  puts "Going to cause an exception."
+  raise "I am the exception"
+end
+
+cause_exception

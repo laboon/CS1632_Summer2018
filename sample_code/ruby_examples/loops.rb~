@@ -1,0 +1,10 @@
+# loop loops around forever until you break
+# This is kind of like a
+
+# Note the do..end.  This is a code block.  Think of it as similar to { ... } in Java.
+j = 1
+loop do
+  puts j
+  j = j + 1
+  break if j >= 10
+end

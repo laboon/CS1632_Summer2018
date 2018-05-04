@@ -1,0 +1,19 @@
+
+public static int laboonify(String l) {
+    char[] chars = l.toCharArray();
+    int counter = 5;
+    for 
+}
+
+public static void main(String[] args) {
+    if (args == null || args.length == 0) {
+	System.out.println("Enter a string");
+	System.exit(1);
+    }
+
+    String j = String.join(" ", args);
+    int result = laboonify(j);
+    System.out.println(String.format("%x", result));
+
+    
+}

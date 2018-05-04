@@ -1,0 +1,3 @@
+raise "Enter a string." unless ARGV.count >= 1
+j = ARGV.join(" ")
+puts j.unpack

@@ -1,0 +1,16 @@
+# If argument count (from command line) is not equal to two, then raise
+# an exception (which will end the program)
+raise "Enter input and output file" unless ARGV.count != 2
+
+# Otherwise, set first file as input and second as output
+input_file = ARGV[0]
+output_file = ARGV[1]
+
+lines = []
+
+File.open(input_file, "r").each_line do |line|
+  lines << line
+end
+
+
+  

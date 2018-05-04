@@ -1,0 +1,25 @@
+# Variables act similar to variables in Java.
+# In Ruby, though, all variables hold objects.  There are no "primitives" like
+# int, char, etc.
+# Variables are case-sensitive.  FOO, fOo, and foo are all different variables.
+# Variables are generally snake_case (all lowercase, words separated by underscores)
+
+my_name = "Bill" # String
+my_age = 38 # Integer
+num_children = 1.0 # Float
+
+# Ruby is dynamically typed - types are inferred at runtime
+# Note there is nothing stopping us from doing this
+
+# This will print out (PUT String) the class of the my_age object
+puts my_age.class # Will print out Integer
+my_age = "Laboon"
+
+# my_age used to store an Integer, but now it stores a String
+# This is actually very dangerous and a common cause of issues in complex
+# Ruby programs!  You send an Integer when it expects a Float, for instance.
+puts my_age.class # Will now print out String
+
+
+
+
