@@ -35,7 +35,7 @@ This course provides students with a broad understanding of modern software test
 
 ## Grading
 
-* Projects (70%):
+* Projects (80%):
   * Deliverable 1 - 15%
   * Deliverable 2 - 20%
   * Deliverable 3 - 20%
