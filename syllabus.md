@@ -60,12 +60,12 @@ WPGR = _Why's (Poignant) Guide to Ruby_
   * QUIZ 3
 
 * (Class 2) Test-driven Development and Writing Testable Code
-  * DUE: D2
-  * ASSIGNED: D3
   
 ## WEEK 7 
 
 * (Class 1) Automated System Testing w/ Katalon
+  * DUE: D2
+  * ASSIGNED: D3
 
 * (Class 2) Intro to Sinatra and System Testing
   
@@ -86,7 +86,6 @@ WPGR = _Why's (Poignant) Guide to Ruby_
   * IN-CLASS EXERCISE 6
   * DUE: D3
   * ASSIGNED: D4
-
 
 ## WEEK 10 
 

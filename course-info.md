@@ -43,9 +43,11 @@ This course provides students with a broad understanding of modern software test
 * Quizzes (20%):
   * Five in-class quizzes; lowest grade is dropped, remaining four worth 5% of grade each
 
-Although you are not required to come to every class, it is recommended that you do.  Many days include both a lecture and an in-class exercise.  Although attendance will not be taken, nor will the exercises be graded, it is _strongly_ recommended that you show up for these as they will allow you to verify that you know the basics of the tools being taught, can have them installed, etc.  If you are having trouble with the deliverable, the instructor will always ask to see the results of the relevant exercise _before_ helping with the deliverable.  In other words, finishing the exercise is necessary proof that you have done the bare minimum in understanding the project before asking for additional help.
+Although you are not required to come to every class, it is recommended that you do.  You _are_ required to be present for quizzes.  Quizzes will NOT be allowed to be made up except with a valid and verified medical excuse.  This is ameliorated by the fact that your lowest quiz score will be dropped.
 
-The following grading scale will be used.  
+Many days include both a lecture and an in-class exercise.  Although attendance will not be taken, nor will the exercises be graded, it is _strongly_ recommended that you show up for these as they will allow you to verify that you know the basics of the tools being taught, can have them installed, etc.  If you are having trouble with the deliverable, the instructor will always ask to see the results of the relevant exercise _before_ helping with the deliverable.  In other words, finishing the exercise is necessary proof that you have done the bare minimum in understanding the project before asking for additional help.
+
+The following grading scale will be used.  Note that I generally do _not_ round grades up; however, I do provide several opportunities for extra credit during the course of the term.
 
 Score  | Grade
 -----: | ------------------------------
@@ -80,8 +82,8 @@ Lecture attendance is not required, but is STRONGLY recommended. The instructor 
 
 * **Deliverable 1:** Developing a test plan and traceability matrix for a system, and fixing discovered defects.
 * **Deliverable 2:** Developing an application using unit tests and static analyis.
-* **Deliverable 3:** Developing a simple web application system with the help of  systems testing.
-* **Deliverable 4:** Performance testing, optimization, and property-based testing of an application.
+* **Deliverable 3:** Developing a simple web application system with the help of automated systems testing (as well as unit testing and static analysis).
+* **Deliverable 4:** Performance testing, optimization, and property-based testing of an application (as well as unit testing, automated systems testing, and static analysis).
 
 ## Quiz Details
 
@@ -105,6 +107,6 @@ Under normal circumstances, it is almost always better to participate in class t
 
 The integrity of the academic process requires fair and impartial evaluation on the part of faculty and honest academic conduct on the part of students. To this end, students are expected to conduct themselves at a high level of responsibility in the fulfillment of the course of their study. It is the corresponding responsibility of faculty to make clear to students those standards by which students will be evaluated and the resources permissible for use by students during the course of their study and evaluation. The educational process is perceived as a joint faculty-student enterprise which will perforce involve professional judgment by faculty and may involve—without penalty—reasoned exception by students to the data or views offered by faculty.
 
-Cheating/plagiarism will not be tolerated. Students suspected of violating the University of Pittsburgh Policy on Academic Integrity, from the February 1974 Senate Committee on Tenure and Academic Freedom reported to the Senate Council, will be required to participate in the outlined procedural process as initiated by the instructor. A minimum sanction of a zero score for the quiz or exam will be imposed.
+Cheating/plagiarism will _not_ be tolerated. Students suspected of violating the University of Pittsburgh Policy on Academic Integrity, from the February 1974 Senate Committee on Tenure and Academic Freedom reported to the Senate Council, will be required to participate in the outlined procedural process as initiated by the instructor. A minimum sanction of a zero score for the quiz or exam will be imposed.
 
 View the complete policy at www.cfo.pitt.edu/policies/policy/02/02-03-02.html.
