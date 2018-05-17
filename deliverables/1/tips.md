@@ -9,3 +9,5 @@
 5. This is a test plan, not a test run - remember the difference.  If you do not know, read the book!
 
 6. Remember that tests should be reproducible - starting with all preconditions met, anybody should be able to reproduce the same steps and get the same results.  If they can't, rethink your preconditions!
+
+7. I recommend writing up your test plan, traceability matrix, and defects first.  Then go through the code and try to fix the defects that you found.  You may also want to commit after you fix each defect, just in case you mess something up while trying to fix the next one.
