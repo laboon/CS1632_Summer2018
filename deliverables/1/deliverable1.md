@@ -1,7 +1,7 @@
 # CS 1632 - Software Testing
 Summer Semester 2018
 
-* DUE:
+* DUE: 5 JUNE 2018
 
 ## Deliverable 1
 
@@ -56,10 +56,10 @@ Other attributes of a defect (e.g., SEVERITY or IMPACT) are not necessary.  The 
 
 ## Grading
 * Introduction: 10% of grade
-* Test Plan: 30% of grade
+* Test Plan: 35% of grade
 * Traceability Matrix: 15% of grade
 * Defects Found and Described: 15% of grade
-* Defects Fixed: 30% of grade
+* Defects Fixed: 25% of grade
 
 ## Super Connect Four
 This is similar to the child's game "Connect Four" - with a twist.  Users play against other users on the same computer - there is no AI player.
@@ -132,7 +132,7 @@ XXXXO
 Player X won!
 ```
 
-Note that the flip caused the X in column 1 to be in the bottom spot, causing there to be four X's in a row, thus causing Player X to win the game.
+Note that the flip caused the X in column 1 to be in the bottom spot, causing there to be four X's in a row, thus causing Player X to win the game.  Even if there were four O's in a row, Player X would win, since it is their turn.
 
 The program expects one argument, a nonnegative integer, to act as the size of the board.  For example, passing in the value "5" would create a 5 x 5 board (25 possible spots for the checkers).  If the player enters anything other than a single nonnegative integer, the program should display an error message informing the user of the issue and shut down.
 
@@ -179,3 +179,5 @@ The specific requirements are listed in the file requirements.txt.
 Please feel free to email me at laboon at cs pitt edu or come to office hours to discuss any problems you have.
 
 ## Sample Runs
+
+See file `sample_output.txt`
