@@ -174,7 +174,7 @@ ruby connect_four.rb *x*
 Player X, enter move >
 ```
 
-The specific requirements are listed in the file requirements.txt.
+The specific requirements are listed in the file `requirements.txt`.
 
 Please feel free to email me at laboon at cs pitt edu or come to office hours to discuss any problems you have.
 
