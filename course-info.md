@@ -5,10 +5,10 @@ Software Quality Assurance - Summer 2018
 
 **Taught by:** Bill Laboon (laboon at cs dot pitt dot edu)
   * GitHub username: laboon
-  
+
 **Instructor's Office Hours:**
 
-  * SENSQ 6305  
+  * SENSQ 6305
   * Wednesdays, 9:30 AM - 11:00 AM and 12:30 PM - 2:00 PM
   * ... or by appointment.
 
@@ -18,7 +18,7 @@ Software Quality Assurance - Summer 2018
 
 **TA**:
 
-* Mehrnoosh Raoufi,  GitHub username: `TBD`
+* Mehrnoosh Raoufi,  GitHub username: `mraoufi`
 
 **Class GitHub repo:** https://www.github.com/laboon/CS1632_Summer2018
 
@@ -68,7 +68,7 @@ Score  | Grade
 
 All groups are expected to do their own work on the group projects, and students to do entirely their own work on the other projects.  Projects may be analyzed with the Stanford _moss_ system to detect unauthorized collaboration between groups or individuals.  Any student caught collaborating or cheating will automatically receive a 0 (zero) for that exam, and may be penalized more harshly based on University of Pittsburgh academic policy.
 
-Assignments should be committed and pushed to GitHub to _a private repository_ and shared with the TA and me by the beginning of class on the due date.  Write-ups are due at the beginning of class and must be given to me in person.  Write-ups must be PRINTED OUT and handed in.  Late assignments will not be accepted absent of extraordinary circumstances, unless indicated previously.  
+Assignments should be committed and pushed to GitHub to _a private repository_ and shared with the TA and me by the beginning of class on the due date.  Write-ups are due at the beginning of class and must be given to me in person.  Write-ups must be PRINTED OUT and handed in.  Late assignments will not be accepted absent of extraordinary circumstances, unless indicated previously.
 
 Please ensure that you have a student GitHub account so that you can make private repositories.  This is free and available here: https://education.github.com/
 
@@ -78,7 +78,7 @@ It is recommended you keep all of your graded assignments until final grades are
 
 ## Attendance
 
-Lecture attendance is not required, but is STRONGLY recommended. The instructor will try to ensure that all information on the exams and projects will be available via slides, but simply reading them may be insufficient to understand the concepts thoroughly. 
+Lecture attendance is not required, but is STRONGLY recommended. The instructor will try to ensure that all information on the exams and projects will be available via slides, but simply reading them may be insufficient to understand the concepts thoroughly.
 
 ## Project Details
 
