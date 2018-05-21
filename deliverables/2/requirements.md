@@ -3,14 +3,13 @@
 2. The program shall create all pseudorandom numbers from the seed passed in as an integer argument to the program (as explained in requirement 1).  Thus, the system is repeatable with the same arguments.
 
 3. The seven locations on the map shall be as follows: Sutter Creek, which connects to Coloma and Angels Camp; Coloma, which connects to Sutter Creek and Virginia City; Angels Camp, which connects to Nevada City and Virginia City; Nevada City, which connects to Angels Camp; Virginia City, which connects to Angels Camp, Coloma, Midas, and El Dorado Canyon; Midas, which connects to Virginia City and El Dorado Canyon; and El Dorado Canyon, which connects to Virginia City and Midas.  It may be easier to view a graphical depiction of the map:
-
 ```
 Nevada City
      \
       \
      Angels Camp
              \            /---------- Midas
-             Virginia City           |
+             Virginia City              |
              /       |    \             |
             /        |     \---------- El Dorado Canyon
            /         |
@@ -31,7 +30,6 @@ Sutter Creek ---- Coloma
 3. A prospector shall prospect until they have visited five locations.  This may include "repeats" - for example, a prospector who went to Sutter Mill, Coloma, Virginia City, Coloma, Sutter Mill has visited five locations, even though they visited only three unique locations.
 
 3. Prospectors shall find the following amounts of gold and silver at each iteration at each location.  Note that the numbers indicated are a maximum.  Prospectors shall find between 0 and the maximum number of ounces shown per iteration.
-
 ```
 Location     | Max Silver | Max Gold
 ------------------------------------
