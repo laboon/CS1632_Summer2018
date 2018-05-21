@@ -8,28 +8,28 @@ Nevada City
      \
       \
      Angels Camp
-             \            /---------- Midas
-             Virginia City              |
-             /       |    \             |
-            /        |     \---------- El Dorado Canyon
-           /         |
-          /          |
+       |     \            /---------- Midas
+       |     Virginia City              |
+       |            |    \              |
+       |            |     \---------- El Dorado Canyon
+       |            |
+       |            |
 Sutter Creek ---- Coloma
 ```
 
-3. A prospector shall always start in Sutter Creek.
+4. A prospector shall always start in Sutter Creek.
 
-3. At each location, a prospector shall search for gold and silver.
+5. At each location, a prospector shall search for gold and silver.
 
-3. During the first three locations a prospector searches, they shall leave a location if they find no silver and no gold.  If they find any silver or gold, they will stay at the location for another iteration.
+6. During the first three locations a prospector searches, they shall leave a location if they find no silver and no gold.  If they find any silver or gold, they will stay at the location for another iteration.
 
-3. During the final two locations a prospector searches, they shall leave a location if they find one ounce or fewer of gold and two ounces or fewer of silver.
+7. During the final two locations a prospector searches, they shall leave a location if they find one ounce or fewer of gold and two ounces or fewer of silver.
 
-3. When a prospector leaves a location, they will travel to one of the connected locations for that location, chosen pseudorandomly.  For example, El Dorado Canyon is connected to Midas and Virginia City, so a prospector leaving El Dorado shall always head to one of those two locations.
+8. When a prospector leaves a location, they will travel to one of the connected locations for that location, chosen pseudorandomly.  For example, El Dorado Canyon is connected to Midas and Virginia City, so a prospector leaving El Dorado shall always head to one of those two locations.
 
-3. A prospector shall prospect until they have visited five locations.  This may include "repeats" - for example, a prospector who went to Sutter Mill, Coloma, Virginia City, Coloma, Sutter Mill has visited five locations, even though they visited only three unique locations.
+9. A prospector shall prospect until they have visited five locations.  This may include "repeats" - for example, a prospector who went to Sutter Mill, Coloma, Virginia City, Coloma, Sutter Mill has visited five locations, even though they visited only three unique locations.
 
-3. Prospectors shall find the following amounts of gold and silver at each iteration at each location.  Note that the numbers indicated are a maximum.  Prospectors shall find between 0 and the maximum number of ounces shown per iteration.
+10. Prospectors shall find the following amounts of gold and silver at each iteration at each location.  Note that the numbers indicated are a maximum.  Prospectors shall find between 0 and the maximum number of ounces shown per iteration.
 ```
 Location     | Max Silver | Max Gold
 ------------------------------------
@@ -43,20 +43,20 @@ El Dorado Cn |   10       |    0
 ------------------------------------
 ```
 
-3. At each iteration, the simulation shall display how many ounces of gold and/or silver were discovered.  If neither was discovered, the system shall state that no precious metals were found.  If only one was discovered, the system shall only print the number of ounces found of that metal (in other words, the system shall never display that 0 ounces of a metal were found).
+11. At each iteration, the simulation shall display how many ounces of gold and/or silver were discovered.  If neither was discovered, the system shall state that no precious metals were found.  If only one was discovered, the system shall only print the number of ounces found of that metal (in other words, the system shall never display that 0 ounces of a metal were found).
 
-3. When heading to a new location, the simulator shall display the new location, along with the amount of gold and silver they are holding.
+12. When heading to a new location, the simulator shall display the new location, along with the amount of gold and silver they are holding.
 
-3. The prospector's location information shall be printed out without a leading tab; iformation on precious metals found and cost shall be indented by one tab.
+13. The prospector's location information shall be printed out without a leading tab; iformation on precious metals found and cost shall be indented by one tab.
 
-3. After a prospector has visited five locations and thus finished prospecting, the number of ounces of gold and silver the prospector has discovered shall be displayed.
+14. After a prospector has visited five locations and thus finished prospecting, the number of ounces of gold and silver the prospector has discovered shall be displayed.
 
-3. After the the number of ounces of gold and silver has been displayed, the total amount of money's worth of precious metals (the sum of both silver and gold) shall be displayed.  This shall be calculated at the prevailing 1849 rate of $20.67 per ounce of gold and $1.31 per ounce of silver.
+15. After the the number of ounces of gold and silver has been displayed, the total amount of money's worth of precious metals (the sum of both silver and gold) shall be displayed.  This shall be calculated at the prevailing 1849 rate of $20.67 per ounce of gold and $1.31 per ounce of silver.
 
-3. When displaying monetary values, they shall be displayed according to the nearest cent (1 / 100th of a dollar) and two values shall always be placed to the right of the decimal point.  Additionally, it shall always be prefaced by the dollar symbol $. For example, print "$1.00" instead of "1.0" or "$1", "$2.50" instead of "$2.5", etc.
+16. When displaying monetary values, they shall be displayed according to the nearest cent (1 / 100th of a dollar) and two values shall always be placed to the right of the decimal point.  Additionally, it shall always be prefaced by the dollar symbol $. For example, print "$1.00" instead of "1.0" or "$1", "$2.50" instead of "$2.5", etc.
 
-3. When displaying information, the correct singular and plural forms shall be used, e.g. "0 ounces", "1 ounce", "2 ounces".
+17. When displaying information, the correct singular and plural forms shall be used, e.g. "0 ounces", "1 ounce", "2 ounces".
 
-3. The simulation shall run the number of times indicated by the second argument to the program.  Prospectors shall be named "Prospector #n" where n is their number, starting with 1 (there shall be no Prospector #0).
+18. The simulation shall run the number of times indicated by the second argument to the program.  Prospectors shall be named "Prospector #n" where n is their number, starting with 1 (there shall be no Prospector #0).
 
-3. Output shall be as close as possible to that displayed in the `sample_output.txt` file in this directory.  This file shall be used to resolve any ambiguities in these requirements.
+19. Output shall be as close as possible to that displayed in the `sample_output.txt` file in this directory.  This file shall be used to resolve any ambiguities in these requirements.
