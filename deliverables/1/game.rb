@@ -227,8 +227,6 @@ class Game
     temp_board = deep_dup_array @board
     @size.times do |x|
       @size.times do |y|
-        # puts "#{x} / #{y} - @board is #{@board[x][y]}"
-        # puts "#{@size - x} / #{@size - y} - temp_board"
         @board[x][y] = temp_board[@size - x - 1][y]
       end
     end
@@ -274,8 +272,8 @@ class Game
     bottom_row = @size - 1
     @size.times do |column|
       if @board[bottom_row][column] != BLANK_SPACE ||
+         # Skip this column, it is either full or entirely empty
          all_blanks_in_column?(column)
-        # Skip this column, it is either full or entirely empty
       else
         # Shift column down until the lowest checker is in the bottom spot
         shift_down column until @board[bottom_row][column] != BLANK_SPACE

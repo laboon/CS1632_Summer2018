@@ -21,15 +21,17 @@ I expect you to test three edge or corner cases as part of the test plan.  These
 
 It is expected that you actually execute the test plan in order to find the defects.  There are AT LEAST three.  Full credit will be given only to those who properly find, describe and fix at least three.  While you are not expected to find *all* of the defects, a reasonable test plan should definitely find at least three.  This is an intentionally target-rich environment.
 
-The repository you and your partner create should be private.  Besides the two people in the group, usernames `laboon` (the instructor) and `mraoufi` (the TA, Mehrnoosh Raoufi) should be added as collaborators.  Only the code
+The repository you and your partner create should be private.  Besides the two people in the group, usernames `laboon` (the instructor) and `mraoufi` (the TA, Mehrnoosh Raoufi) should be added as collaborators.  The code should be entirely on the master branch.  Aside from the code, the only files in the repository should be the optional `README.md` file.
 
 The name of your repository should be `D1`.  Thus, the GitHub link should be: `https://github.com/*YOURUSERNAME*/D1`.  The name of the main file should be `connect_four.rb`.  You may modify other names or add other files if you have a reason, but I should still be able to run the program by typing `ruby connect_four.rb *SIZE*` where *SIZE* is a positive integer.
+
+Only one paper and one repository per group is necessary.
 
 ## Format
 Please hand in the paper to me with a cover page with:
 * The name of the project under test ("Super Connect Four")
 * The names of the people in the group and their GitHub usernames
-* A link to the private repository on GitHub with the fixed files (`connect_four.rb` and `game.rb`, along with any others you may have created yourself)
+* A link to the private repository on GitHub with the fixed files (`connect_four.rb` and `game.rb`, along with any other Ruby files you may have created yourself)
 * The title "CS 1632 - DELIVERABLE 1: Test Plan and Traceability Matrix"
 
 There should be a short introduction (a few paragraphs) in which you may note any concerns or difficulties you may have had or anticipate with the testing process.  You should also note why you considered certain test cases, how you thought of edge cases, etc.
@@ -71,6 +73,54 @@ This is similar to the child's game "Connect Four" - with a twist.  Users play a
 The playing board is a two-dimensional array and players can drop their checker (marked with either an X or an O) and it will fall to the "lowest" spot that is still empty.  Empty spots are indicated by the `.` character, X checkers by the `X` character, and O checkers by the `O` character.  Players can indicate which column they want by typing in the number.
 
 For example, at the start, there are no checkers, so dropping a checker will always drop the lowest spot.  Dropping another checker in the same column will send it to the second-lowest spot.  If a column is full, you are not allowed to drop a checker there.
+
+Below, player X has dropped a checker in column 0.  It "falls" to the lowest slot.
+
+```
+Player X, enter move > 0
+01234
+.....
+.....
+.....
+.....
+X....
+```
+
+Player O will now drop a checker in column 0, as well.  It will "fall" until it hits another checker, and will rest one location above it.
+
+```
+Player O, enter move > 0
+01234
+.....
+.....
+.....
+O....
+X....
+```
+
+If a column is full, you cannot drop a checker there.  This is considered an invalid move and the same player will have the chance to try again.
+
+```
+01234
+X....
+O....
+X....
+O....
+X....
+Player O, enter move > 0
+0 is an invalid move.
+Please enter one of the following:
+1. A valid column number
+2. 'flip' to flip the board
+3. 'rot' to rotate the board
+01234
+X....
+O....
+X....
+O....
+X....
+Player O, enter move >
+```
 
 Alternatively, players can either "flip" or "rotate" the board.  Flipping the board flips everything around, and checkers fall if there is nothing supporting them.  For instance:
 
@@ -116,7 +166,7 @@ XOOO.
 Player X won!
 ```
 
-If flipping or rotating the board causes a "connect four" to occur, that player wins on that turn.
+If flipping or rotating the board causes a "connect four" to occur, that player wins on that turn, EVEN IF THE CHECKERS THAT CREATE A CONNECT FOUR ARE THE OTHER PLAYER'S.
 
 ```
 Player O, enter move > 4

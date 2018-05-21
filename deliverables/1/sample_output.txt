@@ -1,6 +1,8 @@
 # Note - this CORRECT output for deliverable 1.
-
+# Lines that begin with a # are comments
 # Unix commands are prefaced with a "$" (do not type the dollar symbol)
+# In the case of ambiguities in requirements, you may assume that this is
+# correct output.
 
 # Invalid number of arguments
 
