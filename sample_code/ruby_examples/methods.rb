@@ -16,7 +16,7 @@ yay_bill
 def yay(name)
   # Interpolate string - performs .to_s on variable name and adds it in
   # the appropriate place in the string
-  puts "#{name} is great!"  
+  puts "#{name} is great!"
 end
 
 # Note that we can pass in any kind of variable
@@ -29,7 +29,6 @@ end
 yay("Bob")
 yay(1)
 yay "Joe"
-
 
 def double_yay(name_1, name_2)
   puts "#{name_1} and #{name_2} are great!"
@@ -55,7 +54,7 @@ def is_great(name)
   if name == "Bill"
     return true
   elsif name.length > 6
-      return true
+    return true
   end
   false
 end

@@ -11,7 +11,7 @@ num_children = 1.0 # Float
 likes_hoodies = true # TrueClass - Booleans are a little weird in Ruby!
 
 # Ruby is dynamically typed - types are inferred at runtime
-# Note there is nothing stopping us from doing this
+# Note there is nothing stopping us from doing the following:
 
 my_age = 38
 
@@ -40,6 +40,7 @@ puts c / b # prints 1
 # float f = (float) a / b;
 # In Ruby, can convert to Float with .to_f
 # can convert to Integer with .to_i
+puts c / b # prints out 1
 puts c.to_f / b # prints 1.5
 puts c % 2 # prints 1
 
@@ -86,11 +87,11 @@ num_range_arr = num_range.to_a
 # Course -> Instructor
 
 instructors = Hash::new
-instructors[:CS1632] = "Laboon"
-instructors[:CS1530] = "Chang"
-instructors[:CS1501] = "Farnan"
+instructors["CS1632"] = "Laboon"
+instructors["CS1530"] = "Chang"
+instructors["CS1501"] = "Farnan"
 puts "Who teaches CS1632?"
-puts instructors[:CS1632]
+puts instructors["CS1632"]
 puts "List of classes and instructors"
 puts instructors
 
