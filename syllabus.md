@@ -74,7 +74,7 @@ WPGR = _Why's (Poignant) Guide to Ruby_
 
 * (Class 1) Web-Based System Testing
   * QUIZ 4
-  * IN-CLASS EXERCISE 5
+  * IN-CLASS EXERCISE 6
 
 * (Class 2) Performance Testing
   * READING: Chapter 19
@@ -84,7 +84,7 @@ WPGR = _Why's (Poignant) Guide to Ruby_
 * (Class 1) Performance Testing, cont'd.
 
 * (Class 2) Performance Testing and Optimization
-  * IN-CLASS EXERCISE 6
+  * IN-CLASS EXERCISE 7
   * DUE: D3
   * ASSIGNED: D4
 
@@ -95,7 +95,7 @@ WPGR = _Why's (Poignant) Guide to Ruby_
   * QUIZ 5
 
 * (Class 2) Property-Based Testing with Rantly
-  * IN-CLASS EXERCISE 7
+  * IN-CLASS EXERCISE 8
 
 ## WEEK 11
 
@@ -110,5 +110,5 @@ WPGR = _Why's (Poignant) Guide to Ruby_
   * READING: AFIST, Chapter 20
 
 * (Class 2) Penetration Testing and Class Wrap-up
-  * IN-CLASS EXERCISE 8
+  * IN-CLASS EXERCISE 9
   * DUE: D4
