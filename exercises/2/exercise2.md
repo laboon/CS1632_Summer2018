@@ -27,7 +27,9 @@ FKPQUCWT
 DINOSAUR
 ```
 
-This is known as a Caesar cipher.  Although this is a valid cipher, do not rely on its effectiveness!  It is easily broken, even by hand.  See http://practicalcryptography.com/ciphers/caesar-cipher/ if you are interested in the cryptographics details of the Caesar cipher.
+The _key_ to this cipher is 2; if you know that you have to shift the characters up by two to encrypt and down by two to decrypt, you can encrypt/decrypt any text.  Another key might be 4 - then you would shift by four to encrypt/decrypt.  For example, A would become E, B would become F, C would become G, etc.
+
+This is known as a Caesar cipher.  Although this is a valid cipher, do not rely on its effectiveness!  It is easily broken, even by hand.  Even if you were to brute-force it, there are only 26 possibilities to try.  See http://practicalcryptography.com/ciphers/caesar-cipher/ if you are interested in the cryptographics details of the Caesar cipher.
 
 ## Pretty Cromulent Privacy
 
