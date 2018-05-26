@@ -33,9 +33,9 @@ This is known as a Caesar cipher.  Although this is a valid cipher, do not rely 
 
 ## Pretty Cromulent Privacy
 
-We are going to make a program, PCP (Pretty Cromulent Privacy), which will use a slight variation the Caesar cipher.  Given three arguments - a password, an e or d (for encrypt or decrypt), and a filename, it will output an encrypted or decrypted version of the file.
+We are going to make a program, PCP (Pretty Cromulent Privacy), which will use a slight variation of the Caesar cipher.  Given three arguments - a password, an e or d (for encrypt or decrypt), and a filename, it will output an encrypted or decrypted version of the file.
 
-You may assume for our purposes that the password is alphanumeric (A-Z1-9, no spaces or anything else) and that the file is located in the same directory as the `pcp.rb` program.
+You may assume for our purposes that the password is alphanumeric (A-Z0-9, no spaces or anything else) and that the file is located in the same directory as the `pcp.rb` program.
 
 PCP will first generate a key according to the following algorithm: take the ASCII value of each element of the password and multiply it by two.  Then the program will add all of these numbers up and add one.  This will be the key which is "stored" by the password.  Let's step through generating a key using "meow" as the password.
 
