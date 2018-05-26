@@ -38,9 +38,51 @@ You may assume for our purposes that the password is alphanumeric (A-Z1-9, no sp
 PCP will first generate a key according to the following algorithm: take the ASCII value of each element of the password and multiply it by two.  Then the program will add all of these numbers up and add one.  This will be the key which is "stored" by the password.  Let's step through generating a key using "meow" as the password.
 
 ```
+Characters in "meow":
+["m", "e", "o", "w"]
+ASCII values of characters:
+[109, 101, 111, 119]
+ASCII values of each character multipled by 2:
+[218, 202, 222, 238]
+Sum of all values:
+218 + 202 + 222 + 238 = 880
+Add one
+880 + 1 = 881
 
+KEY IS 881
 ```
 
+Now, read in each line from the file to encrypt.  We will NOT encrypt EOL characters (carriage return / line feed), so the number of lines in our encrypted file should equal the number of lines in our decrypted file.
+
+For each character in a line, add the key to the original character value, modulo 128, then print out the character value of the generated value.  For example, let us walk through the first character `T` in `test.txt`.
+
+```
+ASCII value of T = 84
+KEY = 881
+84 + 881 = 965
+965 % 128 = 69
+Character value of 69 = 'E'
+```
+
+So the first character in our encrypted file should be 'E' - and as you can see in `test_encrypted.txt`, it is.
+
+To decrypt, follow the same algorithm, but subtract the key instead of adding it.
+
+```
+ASCII value of E = 69
+KEY = 881
+69 - 881 = -812
+-812 % 128 = 84
+Character value of 84 = 'T'
+```
+
+And now we have decrypted back to our original character.
+
+If we had entered a different password, the key would most likely be different and we would generate garbage.  Note that this is not a great cipher - there are practically only 128 different possibilities for a key value (since we calculate modulo 128).
+
+Note - some of the characters generated may not be visible at the terminal or in your text editor (e.g. control characters).  You can either set your text editor to hex mode (e.g. `M-x hexl-mode` in Emacs, vim should handle this by default, `Toggle Hex View` in Sublime Text, etc.) or `xxd *filename*` at the Unix prompt.  If you are using Windows, Notepad++ has a hex editor plugin.
+
+Of course, you don't have to use a hex editor, you should be able to read/write just fine, you just may not see all of the characters when you print out the file.
 
 ## Ruby Help
 
@@ -130,10 +172,23 @@ You should use the password `bonbon` to decrypt `secret.txt` and encrypt `makese
 
 ## Sample Output
 
-To put the output of the program to a new file, type:
+To put the output of the program to a new file, use the file input redirector, `>`.  This should work in Windows command shell, Powershell, and Unix shells.
 
 ```
+(1266) $ ruby pcp.rb kittykat e test.txt > encrypted_with_kittykat.txt
 
+(1267) $ more encrypted_with_kittykat.txt 
+"encrypted_with_kittykat.txt" may be a binary file.  See it anyway? 
+?34>^K4>^K,^K?0>?
+_ST^^KT^^KL^K_P^_
+?34>^K4>^K,^K?0>?
+_ST^^KT^^KL^K_P^_
+
+(1268) $ xxd encrypted_with_kittykat.txt 
+0000000: 3f33 343e 0b34 3e0b 2c0b 3f30 3e3f 0a5f  ?34>.4>.,.?0>?._
+0000010: 5354 5e0b 545e 0b4c 0b5f 505e 5f0a 3f33  ST^.T^.L._P^_.?3
+0000020: 343e 0b34 3e0b 2c0b 3f30 3e3f 0a5f 5354  4>.4>.,.?0>?._ST
+0000030: 5e0b 545e 0b4c 0b5f 505e 5f0a            ^.T^.L._P^_.
 ```
 
 ```
