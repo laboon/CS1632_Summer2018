@@ -5,7 +5,7 @@ For this exercise, you and a partner will put on your cryptographer's hats and m
 
 ## Grading
 
-This is an exercise and is thus not graded.  However, if you complete it in class and can both encode the file `makesecret.txt` and decode the `secret.txt` file, you will win +1 extra credit for D1.  The first three groups to write the code to do it will win a special prize.
+This is an exercise and is thus not graded.  However, if you complete it BEFORE THE NEXT class and your code can both encode the file `makesecret.txt` and decode the `secret.txt` file, you will win +1 extra credit for D1.  The first three groups to write the code to do it will win a special prize.
 
 ## The Caesar Cipher
 
