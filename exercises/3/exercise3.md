@@ -3,6 +3,10 @@ Summer Semester 2018 - Exercise 3
 
 For this exercise, you and a partner will write unit tests for the `name` program.  This program will tell us the upper-case version of the passed-in name, the number of characters in the name, the excited version of the name (upper-case and followed by three exclamation points), whether or not the name is long, and whether or not the name is futuristic.
 
+## Grading
+
+This is an exercise and is thus not graded.
+
 ## Requirements
 
 Note that unlike systems-level tests, unit tests do not need to map directly to requirements.  However, they are often useful for determine what needs to be done (and in this case, they do map pretty well to requirements).
