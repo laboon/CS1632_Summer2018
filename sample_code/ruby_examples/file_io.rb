@@ -31,9 +31,14 @@ end
 # For each line, print it to the console after:
 # 1. Converting the entire line to upper-case
 # 2. Reversing the word
-# 3. 'Squeezing' all 'runs' of letters (e.g., doggy -> dogy, bookkeeper -> bokeper, mooooooooooooo -> mo)
+# 3. 'Squeezing' all 'runs' of letters (e.g., doggy -> dogy,
+# bookkeeper -> bokeper, mooooooooooooo -> mo)
 
 converted_lines = lines.map { |line| line.upcase.reverse.squeeze }
+
+def anonymous_fn line
+  return line.upcase.reverse.squeeze
+end
 
 # Open output file write-only access
 File.open(output_file, "w") do |file|
@@ -43,4 +48,3 @@ File.open(output_file, "w") do |file|
     file.write("\n")
   end
 end
-  

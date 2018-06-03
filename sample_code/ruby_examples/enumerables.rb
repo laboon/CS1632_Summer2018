@@ -1,4 +1,6 @@
-good_dogs = ["Domino", "Remy", "Mr. Barkerson", "Schaeffer", "Hector", "Dozer"]
+good_dogs = ["Domino", "Remy",
+             "Mr. Barkerson", "Schaeffer",
+             "Hector", "Dozer"]
 
 # We may want to operate on all of the elements inside and convert them to
 # other elements by applying a function held in a block.
