@@ -12,6 +12,8 @@ This program must be written in Ruby and use minitest for the unit tests.  This 
 
 All code and tests should be on GitHub in a private repository accessible to me.
 
+Your repository MUST be named D2.  If you are going to have a separate repository for extra credit, it MUST be named D2_EC.
+
 ## Format
 You should turn in a title page with:
 
@@ -118,7 +120,7 @@ If you are not familiar with seeds for random number generators, recall that in 
 Before each test, add some comments (two or three sentences, on average) explaining what the test is checking.
 
 ## Grading
-I remind you that grammar and good code count as well as functionality.  By good code, I mean: no commented-out code unless there's an EXPLICIT reason, properly indented code, no misspelled words  bad grammar, in comments or summaries, etc.
+I remind you that grammar and good code count as well as functionality.  By good code, I mean: no commented-out code unless there's an EXPLICIT reason, properly indented code, no misspelled words or bad grammar, in comments or summaries, etc.
 
 The program must be run by typing `ruby gold_rush.rb *seed* *number of prospectors*`  at the command line.  It will be run using Ruby 2.5.0 and so I recommend you ensure that you have the same version.
 
@@ -126,9 +128,26 @@ The unit tests must be run by typing the following at the command line: `ruby go
 
 You may ignore the main `gold_rush.rb` file IF AND ONLY IF it has fewer than 15 lines of code.  This will be very useful when developing your tests, so I recommend you look back at D1 and the sample code to see how they are laid out in order to see how to minimize the number of lines in `gold_rush.rb`.
 
-You will lose points if the program itself runs when I try to run the tests.  If you are having trouble with this, remember that any code that you require by a test file will be run.
+You will lose points if the program itself runs when I try to run the tests.  If you are having trouble with this, remember that any code that you require by a test file will be run.  Having a very small "main" file, which "require_relatives" many files that only have classes, will help you avoid this situation.
 
 Unlike D1, you do NOT need to precisely line up requirements with test cases or develop a traceability matrix, but requirements are still useful for doing exploratory testing of your finished product.
+
+## Extra Credit and Competition
+
+If you are going to try for the extra credit, you should create a SEPARATE repository, `D2_EC`.  I recommend you make sure that your "original" D2 works entirely correctly before trying for the extra credit.
+
+For extra credit, whenever the prospector moves, you should show a map with their location.  This description is left intentionally vague!
+
+You can receive up to five extra credit points, although the grading for the extra credit is a bit subjective.  Creating a simple map showing the current location may be worth one or two points.  Creating a map which includes text animation such as showing the "prospector" move from one location to the other (using the `curses` gem or something similar) would be worth three or four points.  Creating a GUI and loading images may be worth four or five points.
+
+The extra credit should also have unit tests included.
+
+Finally, the assignment that I MOST impressed with will win an Android Things kit (includes NXP board, Rainbow Hat extension, screen, camera, wi-fi and ethernet hookups).  This is entirely subjective, but I will be looking at:
+
+1. Is the code well-written?
+2. Is the code well-tested?
+3. How difficult/ambitious is the extra credit?
+4. Is the system well-designed using proper object-oriented techniques?
 
 ## Grading Breakdown
 * Summary and Testing Concerns- 5%
