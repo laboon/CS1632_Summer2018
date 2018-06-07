@@ -13,7 +13,7 @@ class Graph
   def has_node? id
     @nodes.keys.include? id
   end
-  
+
   def add_node node
     @nodes[node.id] = node
     node.id
@@ -22,15 +22,15 @@ class Graph
   def is_pseudograph?
     @nodes.values.any? { |n| n.links_to_self? }
   end
-  
+
   def print
     if @nodes.keys.count.zero?
       puts "Empty graph!"
-    else  
+    else
       @nodes.each do |k, v|
         puts v
       end
     end
   end
-  
+
 end
