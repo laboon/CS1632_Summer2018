@@ -23,7 +23,7 @@ Sutter Creek ---- Coloma
 
 6. During the first three locations a prospector searches, they shall leave a location if they find no silver and no gold.  If they find any silver or gold, they will stay at the location for another iteration.
 
-7. During the final two locations a prospector searches, they shall leave a location if they find one ounce or fewer of gold and two ounces or fewer of silver.
+7. During the final two locations a prospector searches, they shall leave a location if they find one ounce or fewer of gold and two ounces or fewer of silver.  If they find either two ounces or more of gold, or three ounces or more of silver, they will remain.
 
 8. When a prospector leaves a location, they will travel to one of the connected locations for that location, chosen pseudorandomly.  For example, El Dorado Canyon is connected to Midas and Virginia City, so a prospector leaving El Dorado shall always head to one of those two locations.
 
