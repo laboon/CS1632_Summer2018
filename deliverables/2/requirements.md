@@ -2,7 +2,7 @@
 
 2. The program shall create all pseudorandom numbers from the seed passed in as an integer argument to the program (as explained in requirement 1).  Thus, the system is repeatable with the same arguments.
 
-3. The seven locations on the map shall be as follows: Sutter Creek, which connects to Coloma and Angels Camp; Coloma, which connects to Sutter Creek and Virginia City; Angels Camp, which connects to Nevada City and Virginia City; Nevada City, which connects to Angels Camp; Virginia City, which connects to Angels Camp, Coloma, Midas, and El Dorado Canyon; Midas, which connects to Virginia City and El Dorado Canyon; and El Dorado Canyon, which connects to Virginia City and Midas.  It may be easier to view a graphical depiction of the map:
+3. The seven locations on the map shall be as follows: Sutter Creek, which connects to Coloma and Angels Camp; Coloma, which connects to Sutter Creek and Virginia City; Angels Camp, which connects to Nevada City, Sutter Creek, and Virginia City; Nevada City, which connects to Angels Camp; Virginia City, which connects to Angels Camp, Coloma, Midas, and El Dorado Canyon; Midas, which connects to Virginia City and El Dorado Canyon; and El Dorado Canyon, which connects to Virginia City and Midas.  It may be easier to view a graphical depiction of the map:
 ```
 Nevada City
      \
