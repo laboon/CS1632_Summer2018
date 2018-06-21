@@ -2,7 +2,7 @@
 
 2. The program shall create all pseudorandom numbers from the seed passed in as an integer argument to the program (as explained in requirement 1).  Thus, the system is repeatable with the same arguments.
 
-3. The seven locations on the map shall be as follows: Sutter Creek, which connects to Coloma and Angels Camp; Coloma, which connects to Sutter Creek and Virginia City; Angels Camp, which connects to Nevada City and Virginia City; Nevada City, which connects to Angels Camp; Virginia City, which connects to Angels Camp, Coloma, Midas, and El Dorado Canyon; Midas, which connects to Virginia City and El Dorado Canyon; and El Dorado Canyon, which connects to Virginia City and Midas.  It may be easier to view a graphical depiction of the map:
+3. The seven locations on the map shall be as follows: Sutter Creek, which connects to Coloma and Angels Camp; Coloma, which connects to Sutter Creek and Virginia City; Angels Camp, which connects to Nevada City, Sutter Creek, and Virginia City; Nevada City, which connects to Angels Camp; Virginia City, which connects to Angels Camp, Coloma, Midas, and El Dorado Canyon; Midas, which connects to Virginia City and El Dorado Canyon; and El Dorado Canyon, which connects to Virginia City and Midas.  It may be easier to view a graphical depiction of the map:
 ```
 Nevada City
      \
@@ -23,7 +23,7 @@ Sutter Creek ---- Coloma
 
 6. During the first three locations a prospector searches, they shall leave a location if they find no silver and no gold.  If they find any silver or gold, they will stay at the location for another iteration.
 
-7. During the final two locations a prospector searches, they shall leave a location if they find one ounce or fewer of gold and two ounces or fewer of silver.
+7. During the final two locations a prospector searches, they shall leave a location if they find one ounce or fewer of gold and two ounces or fewer of silver.  If they find either two ounces or more of gold, or three ounces or more of silver, they will remain.
 
 8. When a prospector leaves a location, they will travel to one of the connected locations for that location, chosen pseudorandomly.  For example, El Dorado Canyon is connected to Midas and Virginia City, so a prospector leaving El Dorado shall always head to one of those two locations.
 
