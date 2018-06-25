@@ -1,6 +1,6 @@
 # CS 1632 - Software Quality Assurance
 Summer Semester 2018
-ASSIGNED 5 JUNE 2018, DUE 26 JUNE 2018
+ASSIGNED 5 JUNE 2018, DUE 26 JUNE 2018 (Late Due Date 28 JUNE 2018: -15 points)
 
 ## Deliverable 2
 
