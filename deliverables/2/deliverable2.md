@@ -1,6 +1,6 @@
 # CS 1632 - Software Quality Assurance
 Summer Semester 2018
-ASSIGNED 5 JUNE 2018, DUE 26 JUNE 2018
+ASSIGNED 5 JUNE 2018, DUE 26 JUNE 2018 (Late Due Date 28 JUNE 2018: -15 points)
 
 ## Deliverable 2
 
@@ -47,6 +47,8 @@ There should be a minimum of sixteen (16) unit tests and 90% statement coverage 
 Note that the above are ABSOLUTE MINIMUM values.  You may have more unit tests or higher statement coverage.
 
 Rubocop should show no errors or warnings when run with the included .rubocop.yml file.  I will give you three "get out of jail free" cards on this - you can have up to three errors or warnings with no loss of credit.  However, for every error past this, you will receive -2 points, up to a total of -10 for the project.
+
+Note that this only counts for SOURCE files, not test files.  You may ignore test files for Rubocop purposes.
 
 Group the unit tests for each method together (see format below).  Before each group of unit tests for a method, do an equivalence class partitioning for that method OR, for a method that does not lend itself to this, indicate why not.  For example, assume you have a method which just prints a line of asterisks to the console:
 
