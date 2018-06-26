@@ -42,3 +42,8 @@ get '/' do
   end
   erb :index, :locals => { number: number, guess: guess, got_it: got_it, msg: msg }
 end
+
+not_found do
+  status 404
+  erb :404
+end
