@@ -13,5 +13,5 @@ You should be able to answer questions on these topics for Quiz #4.
 9. Why don't we test the "text" (HTML) of a page directly?
 10. What is Katalon?  What is it used for?
 11. What is Sinatra?  What is it used for?
-12. Understand basics of Sinatra - routing, .erb files, etc.
+12. Understand basics of Sinatra - routing, what is the /views folder, .erb files, etc.
 13. Be able to write a simple .erb file (for example, to display one of two messages to a user).
