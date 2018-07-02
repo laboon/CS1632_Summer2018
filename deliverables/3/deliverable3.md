@@ -10,7 +10,7 @@ Requirements for this program are in the `requirements.md` file in this director
 
 All code and tests should be on GitHub in a private repository accessible to me.
 
-Your repository MUST be named D3.  If you are going to have a separate repository for extra credit, it MUST be named D3_EC.
+Your repository MUST be named D3.
 
 ## Format
 You should turn in a title page with:

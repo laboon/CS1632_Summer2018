@@ -12,13 +12,18 @@ end
 # Determine the message to send depending on whether the guess is higher,
 # lower, or the same as the secret number
 def determine_msg(number, guess)
+  to_return = ""
   if guess == number
-    "That's exactly right!"
+    to_return = "That's exactly right!"
   elsif guess > number
-    "That's too high!"
+    to_return = "That's too high!"
   else
-    "That's too low!"
+    to_return = "That's too low!"
   end
+  if (number - guess).abs > 10
+    to_return += " You're way off!"
+  end
+  to_return
 end
 
 # If a GET request comes in at /, do the following.
@@ -43,7 +48,15 @@ get '/' do
   erb :index, :locals => { number: number, guess: guess, got_it: got_it, msg: msg }
 end
 
-# not_found do
-#   status 404
-#   erb :404
-# end
+get '/bill' do
+  puts "BILL!!!!"
+end
+
+get '/nobill' do
+  puts "I AM SAD"
+end
+
+not_found do
+  status 404
+  erb :error
+end
