@@ -2,53 +2,17 @@
 
 ## Exercise 6
 
-For this assignment, you and a partner will write a systems-level, automated black-box tests for a Ruby compilation visualizer using the Katalon Automation Recorder.  You should substantially test the arithmetic functionality for the entire project.
+For this assignment, you and a partner will update the "guessing game" in `/sample_code/sinatra_example` and add systems-level, automated black-box tests using Katalon Automation Recorder.  Your tests should focus on the functionality you will add (below).
 
-The Ruby compilation visualizer, Hoodpopper, is located here: http://lit-bayou-7912.herokuapp.com/
+I recommend you do a minimum of six tests, checking various base, edge, and corner cases.  However, do not focus on the number of tests too heavily; I am more concerned that you cover a broad variety of cases, and ones which are focused and still likely to find defects.
 
-This is a Rails application written by me for Ruby compilation analysis so that I could improve performance in a Ruby app.  The code is located here: https://github.com/laboon/hoodpopper The tests you write can be black-box tests; you should not need to look at this code unless you're interested.  If you'd prefer to do some grey-box testing, feel free to check out the code, but once again, it is not necessary.
+I also recommend that you write the code for the test mode first, as it will make your other testing much easier.  Then write the Katalon tests for the test mode.  Then you can work on the code for the second requirement, then finally the Katalon tests for the second requirement.
 
-I recommend you do a minimum of eight tests, checking various base, edge, and corner cases.  However, do not focus on the number of tests too heavily; I am more concerned that you cover a broad variety of cases, and ones which are focused and still likely to find defects.
+## Functionality to Add
 
-## Ruby Basics
-
-You should focus only on basic arithmetic (+, -, *, /), variables, and printing for this exercise, e.g.:
-
-Settings variables...
-
-```ruby
-a = 10
-```
-
-Basic arithmetic operations and precedence...
-
-```ruby
-a = 5
-b = 6
-c = a + (b * 4)
-```
-
-Console output...
-
-```ruby
-the_best_cat = "Noogie Cat"
-puts "The best cat is: #{the_best_cat}"
-```
-
-
-Now, for some compiler theory.  If you have taken compilers, this is a very brief, hand-wavy and possibly less-than-accurate introduction.  If you would like to go more into detail, you can take CS1622 Compiler Design.  Compiling a Ruby program consists of three stages: tokenization, parsing, and actually compiling to bytecode.  First, the tokenizer goes through and separates the code you have written into tokens, e.g., "public", space, "static", space, etc.  The parser puts this into an abstract syntax tree (AST) - just think of it as a regular tree with the structure of your program.  Finally, the compiler goes through the AST and writes the actual machine-level instructions to an executable.  This is how your Java code become JVM bytecode, or your C code becomes x86 instructions.  In this case, we will construct bytecode for the YARV (_Yet Another Ruby VM_, Ruby's default virtual machine).
-
-I do not expect you to understand the entire compilation process, or to memorize all of the operations.  Understanding the following should be enough to write sufficient tests for this assignment.
-
-_Tokenization_: Know that any spaces should show up as `:on_sp`.  Identifiers for functions such as `puts` should show up as `:on_ident`.  Variables such as `a` are also identifiers.  Newlines should show up as `:on_nl`.  Operators such as `+` and `*` are identified with `:on_op`.
-
-_Parsing_: Any non-whitespace (e.g. `:op_nl` or `:on_sp`) tokens (such as `+`, `-`, or `puts`) which appear when being tokenized should also appear in the AST (parse tree).  Whitespace tokens should not appear in the AST.
-
-_Compiling_: Any program that contains `puts` should also have the `puts` YARV operation.  A program which contains `+` should call the `opt_plus` operation, plus put any of the values specified on the stack using the `putobject` operation.  Any program which contains `-` (subtraction) should contain the `opt_minus` operation, any program with `/`(division) should contain `opt_div`, any program with `*` should contain `opt_mult`.
-
-Based on these and any other issues or expected behavior you may discover, you should write approximately eight test cases and save them.
+1. Add a "test" mode.  If a param called "test" with any integer value is passed in, the secret number should be set to whatever the test value is.  If the test parameter cannot be interpreted as an integer or is an invalid integer (i.e., one greater than 100 or less than 1), the secret number should be set to 50.
+2. Check to see if the user's guess is GREATER than 10 away (in either direction) from the secret number.  If so, add the line "You're WAY off!" to the output page.  For example, if the secret number is 12 and the user's guess is 14, the page should display as normal.  If the user's guess is 22, the message would also NOT be shown (22 - 12 = exactly 10).  However, if the user's guess is 23 (22 - 12 = 11, greater than 10), the "You're WAY off!" message should be displayed.
 
 ## Grading
 
-This is an exercise and thus not graded.  Please feel free to speak to or email me to discuss any problems that you have. 
- 
+This is an exercise and thus not graded.  Please feel free to speak to or email me to discuss any problems that you have.  However, if you can complete it by the end of class, you will receive one bonus point on D3.
