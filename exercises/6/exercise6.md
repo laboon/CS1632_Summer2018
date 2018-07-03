@@ -15,4 +15,4 @@ I also recommend that you write the code for the test mode first, as it will mak
 
 ## Grading
 
-This is an exercise and thus not graded.  Please feel free to speak to or email me to discuss any problems that you have.  However, if you can complete it by the end of class, you will receive one bonus point on D3.
+This is an exercise and thus not graded.  Please feel free to speak to or email me to discuss any problems that you have.  However, if you can complete it by the beginning of next class, you will receive two bonus points on D3.
