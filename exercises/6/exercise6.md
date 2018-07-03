@@ -11,7 +11,7 @@ I also recommend that you write the code for the test mode first, as it will mak
 ## Functionality to Add
 
 1. Add a "test" mode.  If a param called "test" with any integer value is passed in, the secret number should be set to whatever the test value is.  If the test parameter cannot be interpreted as an integer or is an invalid integer (i.e., one greater than 100 or less than 1), the secret number should be set to 50.
-2. Check to see if the user's guess is GREATER than 10 away (in either direction) from the secret number.  If so, add the line "You're WAY off!" to the output page.  For example, if the secret number is 12 and the user's guess is 14, the page should display as normal.  If the user's guess is 22, the message would also NOT be shown (22 - 12 = exactly 10).  However, if the user's guess is 23 (22 - 12 = 11, greater than 10), the "You're WAY off!" message should be displayed.
+2. If the user is within 5, inform the user that they are close (e.g., if the secret number is 10 - 11, 12, 13, 14, or 15, or 5, 6, 7, 8, or 9, would all show the message, other numbers would not) with the message "You're really close!".  Otherwise display nothing.
 
 ## Grading
 
