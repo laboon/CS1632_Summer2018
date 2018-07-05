@@ -1,0 +1,31 @@
+* Summary and Testing Concerns- 5%
+
+
+
+
+
+* Screenshot of executed unit tests - 5%
+
+
+
+
+
+* Program Functionality - 45%
+
+
+
+
+
+
+
+
+
+
+
+* Test Code (including statement coverage) - 45%
+
+
+
+
+
+* [-2 for every Rubocop error past 3, up to -10]
