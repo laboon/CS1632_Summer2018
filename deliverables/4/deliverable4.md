@@ -46,7 +46,7 @@ There should be at least sixteen unit tests and statement coverage of at least 8
 
 You should time the program with the `long.txt` file three times AND indicate the mean and median amount of real ("wall clock") time it took to execute.  You can do this with the `time` command in Unix-like systems (Linux, OS X, BSD) or the `Measure-Command` command in PowerShell on Windows systems.  All three of these times should be listed ALONG with the MEAN and MEDIAN time to execute the program with `long.txt` on a separate page.
 
-The fastest program to execute will win a prize (to be discussed in class) for the members of the group.
+The fastest three programs to _correctly_ execute my generated equivalent of a long blockchain will receive +3, +5, and +10 bonus points for the members of the group, respectively.
 
 Note that the blockchain files I will run on it will be similar to, but different, than the example blockchain files shown here.  These are just to give you examples of possible errors in the Billcoin blockchain files.
 
