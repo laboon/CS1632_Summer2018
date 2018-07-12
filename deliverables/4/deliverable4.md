@@ -1,9 +1,7 @@
 # CS 1632 - Software Quality Assurance
 Summer Semester 2018
 
-DUE 12
-
-UPDATED: DUE 14 MAR (MON/WED) / 15 MAR (TUE/THU)
+DUE 2 AUG 2018
 
 ## Deliverable 4
 
