@@ -11,7 +11,7 @@ In order to do so, we will use the Ruby gem __rantly__.  Rantly is a property-ba
 
 ## Steps
 
-1. Make sure that you run `bundle install` before running any tests.  One the gems that will be installed is rantly.
+1. Make sure that you run `bundle install` before running any tests.  One of the gems that will be installed is rantly.
 1. I recommend you play around with the program a little (by running `ruby trade_engine.rb`) so that you understand how the program works.  I also advise you to examine the rantly GitHub page ( https://github.com/rantly-rb/rantly ) if you have any questions in terms of syntax.
 3. We are going to test the `Market` class (in `market.rb`) using property-based testing.  There are already several property-based tests available - run them as you would any Minitest test.  There are also some commented-out tests which describe invariants which should hold.  Uncomment them and fill them in, and try to find some errors of your own.
 5. Fix any errors that you find.
@@ -29,4 +29,3 @@ If you are having trouble using bundle install (such as an error saying `Gem::Re
 ## Grading
 
 This is an exercise and is not graded.
-

@@ -1,7 +1,7 @@
 require 'flamegraph'
 
 def problematic_method n
-  (0..10000).to_a.map { |y| y ** 300 }.reduce(:+)
+  (0..1000).to_a.map { |y| y ** 300 }.reduce(:+)
 end
 
 def no_problem_here n

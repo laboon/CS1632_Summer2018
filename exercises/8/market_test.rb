@@ -9,7 +9,7 @@ class MarketTest < Minitest::Test
   def setup
     @market = Market.new
   end
-  
+
   # This is a traditional unit test - used solely
   # to show the difference between property-based
   # testing and "traditional" testing
@@ -20,7 +20,7 @@ class MarketTest < Minitest::Test
   end
 
   # Each of the following two tests should find an error!
-  
+
 
   # Calculating the cost to buy a stock should always
   # result in a positive result (>0).
@@ -32,25 +32,25 @@ class MarketTest < Minitest::Test
       [share_price, num_shares]
     }.check { |share_price, num_shares|
       value = @market.calculate_cost(share_price, num_shares)
-      assert value > 0
+      assert value >= 0
     }
   end
-  
+
   # Generating an initial value of a stock should always
   # create a stock value of between $1.00 and $30.00
   # (inclusive)
-  
+
   def test_starting_price_in_correct_range
     property_of {
       integer
     }.check { |seed|
       initial_price = @market.initial_price(seed)
       assert initial_price >= 1.0 && initial_price <= 30.0
-    }    
+    }
   end
 
 
-  
+
   # TODO
 
   # The price of a stock should always result in a Numeric
@@ -65,7 +65,7 @@ class MarketTest < Minitest::Test
   #   }
   # end
 
-  
+
   # After iteration, the values of the stock market should
   # always be positive (there should never be a negative-value
   # stock)
@@ -75,5 +75,5 @@ class MarketTest < Minitest::Test
   # def test_stock_price_always_positive
   # end
 
-  
+
 end
