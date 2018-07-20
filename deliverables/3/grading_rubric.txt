@@ -1,0 +1,5 @@
+* Summary and Testing concerns - 10%
+* Screen shot or printout of test results - 5%
+* Functionality - 30%
+* Katalon tests - 50%
+* Traceability matrix - 5%
