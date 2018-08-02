@@ -48,6 +48,11 @@ get '/' do
   erb :index, :locals => { number: number, guess: guess, got_it: got_it, msg: msg }
 end
 
+get '/meow' do
+  x = params['x']
+  erb :meow, :locals => {x: x}
+end
+
 get '/bill' do
   puts "BILL!!!!"
 end
