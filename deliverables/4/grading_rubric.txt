@@ -1,0 +1,39 @@
+* Summary - 10%
+
+
+
+* Flame graph - 10%
+
+
+
+
+* Final times (>= 3 of each + mean) included - 5%
+
+
+
+
+* Functionality - 45%
+
+
+
+
+
+
+
+
+
+
+
+
+
+* Unit Tests (including statement coverage) - 30%
+
+
+
+
+* -2 for each Rubocop error past three, up to -10 points off
+
+Submission issues (-10) or other adjustments:
+  * +10/+5/+3 BONUS to fastest verifiers for final/long.txt
+
+Total:                                                      _____ / 100
